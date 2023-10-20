@@ -20,6 +20,9 @@ namespace Concessonária.Controllers
 
         public IActionResult Update(int id)
         {
+            MotosDAO motos = new MotosDAO();
+            Motos motos2 = new Motos();
+            ViewBag.Motos = motos.getTodasasMotos().Where(x => x.mot_id == id).FirstOrDefault();
             return View();
         }
         [HttpPost]

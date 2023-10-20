@@ -19,8 +19,11 @@ namespace Concessonária.Controllers
             return View();
         }
 
-        public IActionResult Update()
+        [HttpGet]
+        public IActionResult Update(int id)
         {
+            CarrosDAO carros = new CarrosDAO();
+            ViewBag.Carros = carros.getTodososCarros().Where(x => x.car_id == id).FirstOrDefault();
             return View();
         }
 
@@ -47,6 +50,7 @@ namespace Concessonária.Controllers
             return RedirectToAction("index");
 
         }
+
 
         [HttpPost]
         public async Task<IActionResult> UpdateCarros(int id, string car_modelo, string car_ano, string car_cor)

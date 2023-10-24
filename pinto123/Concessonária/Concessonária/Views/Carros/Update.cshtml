@@ -3,23 +3,25 @@
 *@
 @{
 }
-<form action="/Carros/UpdateCarros" method="post">
-    <div class="form-group" hidden>
-        <label for="idonme">Modelo</label>
-        <input type="text" value="@ViewBag.Carros?.car_id" class="form-control" id="id" name="id" aria-describedby="nome" placeholder="id" readonly>
-    </div>
-    <div class="form-group">
-        <label for="idonme">Modelo</label>
-        <input type="text" value="@ViewBag.Carros?.car_modelo" class="form-control" id="car_modelo" name="car_modelo" aria-describedby="nome" placeholder="Digite o nome" required>
-    </div>
-    <div class="form-group">
-        <label for="idendereco">Ano</label>
-        <input type="text" class="form-control" id="car_ano" value="@ViewBag.Carros?.car_ano" name="car_ano" aria-describedby="endereco" required>
-    </div>
-    <div class="form-group">
-        <label for="idnumero">Cor</label>
-        <input type="text" class="form-control" id="car_cor" value="@ViewBag.Carros?.car_cor" name="car_cor" aria-describedby="numero" required>
-    </div>
+<body style="background: url(); background-size:cover;">
+    <form action="/Carros/UpdateCarros" method="post">
+        <div class="form-group" hidden>
+            <label for="idonme">Modelo</label>
+            <input type="text" value="@ViewBag.Carros?.car_id" class="form-control" id="id" name="id" aria-describedby="nome" placeholder="id" readonly>
+        </div>
+        <div class="form-group">
+            <label for="idonme">Modelo</label>
+            <input type="text" value="@ViewBag.Carros?.car_modelo" class="form-control" id="car_modelo" name="car_modelo" aria-describedby="nome" placeholder="Digite o nome" required>
+        </div>
+        <div class="form-group">
+            <label for="idendereco">Ano</label>
+            <input type="text" class="form-control" id="car_ano" value="@ViewBag.Carros?.car_ano" name="car_ano" aria-describedby="endereco" required>
+        </div>
+        <div class="form-group">
+            <label for="idnumero">Cor</label>
+            <input type="text" class="form-control" id="car_cor" value="@ViewBag.Carros?.car_cor" name="car_cor" aria-describedby="numero" required>
+        </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
-</form>
+        <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+    </form>
+</body>

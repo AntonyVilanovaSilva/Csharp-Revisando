@@ -14,6 +14,8 @@ namespace Concessonária.Controllers
             return View();
         }
 
+
+        [HttpGet]
         public IActionResult create()
         {
             return View();

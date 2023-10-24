@@ -3,8 +3,9 @@
 *@
 @{
 }
-<body style="background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmimUBhGRTVkJ4U2zpU_xHSwTSE1CgLmDKFg&usqp=CAU); background-size:cover ; background-attachment: fixed;">
-    <h1 class="text-light">Lista de Carros</h1>
+<body style="background: url(https://i.pinimg.com/736x/c6/00/91/c60091e78af1bab1b6be78b68118454f.jpg); background-size:cover;  background-attachment: fixed;
+  background-position: center;  ">
+    <h1>Lista de Caminhões</h1>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.4.1/css/bootstrap.min.css">
 
@@ -23,20 +24,20 @@
         <thead>
         </thead>
         <tbody>
-            @foreach (var item in @ViewBag.Carros)
+            @foreach (var item in @ViewBag.Caminhao)
             {
                 <tr>
-                    <th scope="row">@item.car_id</th>
-                    <td>@item.car_modelo</td>
-                    <td>@item.car_ano</td>
-                    <td>@item.car_cor</td>
+                    <th scope="row">@item.cam_id</th>
+                    <td>@item.cam_modelo</td>
+                    <td>@item.cam_ano</td>
+                    <td>@item.cam_cor</td>
 
                     <td>
-                        <a href="/Carros/Apagar/@item.car_id" name="id" id="id" class="btn btn-danger">Apagar</a>
+                        <a href="/Caminhao/Apagar/@item.cam_id" name="id" id="id" class="btn btn-danger">Apagar</a>
                     </td>
 
                     <td>
-                        <a href="/Carros/Update/@item.car_id" name="id" id="id" class="btn btn-primary">Atualizar</a>
+                        <a href="/Caminhao/Update/@item.cam_id" name="id" id="id" class="btn btn-primary">Atualizar</a>
                     </td>
 
 
@@ -49,6 +50,6 @@
     </table>
 
     <div class='d-flex justify-content-center align-items-center'>
-        <a href='/Carros/create' class='btn btn-success'>Inserir</a>
+        <a href='/Caminhao/create' class='btn btn-success'>Inserir</a>
     </div>
 </body>

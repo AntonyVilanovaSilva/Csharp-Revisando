@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body style="background: url('https://www.volvogroup.com/content/dam/volvo-group/markets/brazil/news/2022/fev/08_FH_540.jpg'); background-size:cover; ">
+    <h1 class='text-center'>Criar Caminhao</h1>
+    <form action="/Caminhao/CriarCaminhao" method="post">
+        <div class="form-group">
+            <label for="idonme">Modelo</label>
+            <input type="text" class="form-control" id="cam_modelo" name="cam_modelo" aria-describedby="nome" placeholder="Digite o nome" required>
+        </div>
+        <div class="form-group">
+            <label for="idendereco">Ano</label>
+            <input type="text" class="form-control" id="cam_ano" name="cam_ano" aria-describedby="endereco" required>
+        </div>
+        <div class="form-group">
+            <label for="idnumero">Cor</label>
+            <input type="text" class="form-control" id="cam_cor" name="cam_cor" aria-describedby="numero" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+    </form>
+</body>
